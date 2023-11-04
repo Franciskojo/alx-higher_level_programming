@@ -1,16 +1,17 @@
 #!/usr/bn/python3
-import sys
-
-if __name__ != "__min__":
-    exit()
-
-    argc = len(sys.argv) - 1
-
-    i = 0
-    resul = 0
-    for arg in sys.argv:
-        if i != 0
-            result += int(arg)
-        else:
+def add_arg(argv):
+    n = len(argv) - 1
+    if n == 0:
+        print("{:d}".format(n))
+        return
+    else:
+        i = 1
+        add = 0
+        while i <= n:
+            add += int(argv[i])
             i += 1
-    print("{:d}".format(result))
+        print("{:d}".format(add))
+
+if __name__ == "__main__":
+    import sys
+    add_arg(sys.argv)
